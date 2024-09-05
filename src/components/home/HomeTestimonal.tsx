@@ -17,7 +17,7 @@ const HomeTestimonal = () => {
           </div>
           <div className="py-10">
             <h2 className="font-semibold text-center text-3xl  ">
-              Don`&apos;`t take our word for it. Over{" "}
+              Don&apos;t take our word for it. Over{" "}
               <span className="text-gold">100+ people</span> trust us.
             </h2>
             <div className="border-b mt-1 border-gold w-2/5 mx-auto"></div>
