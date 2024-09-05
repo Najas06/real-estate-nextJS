@@ -14,22 +14,22 @@ const Hero = () => {
   return (
     <section>
       <div className="max-sm:flex max-sm:flex-col">
-        <Carousel className=" relative top-0 max-sm:top-[16%] max-sm:h-[1000px] max-sm:relative ">
+        <Carousel className=" relative top-0 max-sm:top-[16%]  max-sm:relative ">
           <CarouselContent>
             {/* mapping items  */}
             {data &&
-              data.map((item,i) => (
+              data.map((item, i) => (
                 <CarouselItem key={i}>
-                  <div className="relative">
+                  <div className="relative border border-purple-50">
                     <Image
                       alt="logo"
                       src={item.img}
                       width={1280}
                       height={1080}
-                      className="w-full max-h-screen object-cover max-sm:h-[1000px] max-sm:w-full "
+                      className="w-full max-h-screen object-cover max-sm:h-[800px] max-sm:w-full "
                     />
                     <div className="absolute z-20 px-10 py-5  bg-black right-16 bg-opacity-90 top-1/3 max-sm:w-full max-sm:right-0 max-sm:h-[1000px] max-sm:top-0    max-sm:flex  max-sm:justify-center max-md:items-center max-sm:flex-col max-sm:bg-opacity-75 ">
-                      <div className="flex flex-col items-end text-7xl font-bold tracking-tight gap-2 max-xl:text-5xl max-lg:text-3xl max-md:text-xl max-md:gap-1 max-sm:gap-0 max-sm:text-base max-sm:items-center">
+                      <div className="flex flex-col items-end text-7xl font-bold tracking-tight gap-2 max-xl:text-5xl max-lg:text-3xl max-md:text-xl max-md:gap-1 max-sm:gap-0 max-sm:text-base max-sm:items-center max-sm:-mt-16">
                         <h2 className="max-sm:text-4xl">Awesome Design</h2>
                         <h2 className="max-sm:text-3xl">and The way to</h2>
                         <h2 className="max-sm:text-4xl">
