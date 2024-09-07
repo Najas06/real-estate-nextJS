@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins as Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ weight: ["100","200","300","400","500","600"], subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={`dark ${inter.className}`}>
         <Navbar/>
         {children}
+        <Footer/>
         </body>
     </html>
   );

@@ -20,7 +20,7 @@ const Hero = () => {
             {data &&
               data.map((item, i) => (
                 <CarouselItem key={i}>
-                  <div className="relative border border-purple-50">
+                  <div className="relative border ">
                     <Image
                       alt="logo"
                       src={item.img}
@@ -29,10 +29,10 @@ const Hero = () => {
                       className="w-full max-h-screen object-cover max-sm:h-[800px] max-sm:w-full "
                     />
                     <div className="absolute z-20 px-10 py-5  bg-black right-16 bg-opacity-90 top-1/3 max-sm:w-full max-sm:right-0 max-sm:h-[1000px] max-sm:top-0    max-sm:flex  max-sm:justify-center max-md:items-center max-sm:flex-col max-sm:bg-opacity-75 ">
-                      <div className="flex flex-col items-end text-7xl font-bold tracking-tight gap-2 max-xl:text-5xl max-lg:text-3xl max-md:text-xl max-md:gap-1 max-sm:gap-0 max-sm:text-base max-sm:items-center max-sm:-mt-16">
-                        <h2 className="max-sm:text-4xl">Awesome Design</h2>
-                        <h2 className="max-sm:text-3xl">and The way to</h2>
-                        <h2 className="max-sm:text-4xl">
+                      <div className="flex flex-col items-end text-7xl font-bold tracking-tight gap-2 max-xl:text-5xl max-lg:text-3xl max-md:text-xl max-md:gap-1 max-sm:gap-0 max-sm:text-base max-sm:items-center max-sm:-mt-44">
+                        <h2 className="max-sm:text-3xl ">Awesome Design</h2>
+                        <h2 className="max-sm:text-2xl">and The way to</h2>
+                        <h2 className="max-sm:text-2xl">
                           Get <span className="text-gold">Home</span>
                         </h2>
                       </div>
