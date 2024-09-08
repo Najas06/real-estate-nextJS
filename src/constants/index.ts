@@ -130,3 +130,28 @@ export const carousel = {
         }
     ]
 }
+
+export const about = {
+    team:[
+        {
+            img:'/team1.jpeg',
+            name:'ABDUL RAHMAN',
+            role:'CEO of Real Estate'
+        },
+        {
+            img:'/team2.jpeg',
+            name:'KIM KONG',
+            role:'Sale Executive'
+        },
+        {
+            img:'/team3.jpeg',
+            name:'JOY JACOB',
+            role:'Marketing Lead'
+        },
+        {
+            img:'/team4.jpeg',
+            name:'SERA JHON',
+            role:'Customer Support'
+        }
+    ]
+}
