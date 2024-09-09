@@ -44,7 +44,7 @@ const Hero = () => {
                   </h2>
                   {/* <h2 className="font-semibold text-7xl max-xl:text-6xl max-lg:text-5xl">Experience</h2> */}
                 </div>
-                <p className="font-light text-3xl max-xl:text-2xl max-lg:text-xl max-md:text-center max-sm:text-base">Don't take our word for it. Over <br className="max-md:hidden"/><span className="text-gold">100+ people</span> trust us.</p>
+                <p className="font-light text-3xl max-xl:text-2xl max-lg:text-xl max-md:text-center max-sm:text-base">Don&apos;t take our word for it. Over <br className="max-md:hidden"/><span className="text-gold">100+ people</span> trust us.</p>
                 <p className="text-xl max-xl:text-lg max-lg:text-base max-md:text-center max-sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repudiandae, minima iste atque earum quaerat sed error. Ipsam, animi officia! Modi corporis odio debitis aut soluta vitae a praesentium. Beatae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur fugit, repudiandae omnis doloremque quis nisi, natus animi libero porro itaque maiores quo sapiente ducimus dolorem exercitationem atque ipsam ratione ex.</p>
                 <div className="flex justify-between items-center w-full max-md:justify-evenly">
                   <h2 className="text-4xl font-semibold max-xl:text-3xl"><span className="text-gold">4.9</span>/5 <span className="text-2xl max-xl:text-xl">Rating</span></h2>

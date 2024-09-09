@@ -25,7 +25,7 @@ const Navbar = () => {
           <ul className="flex items-center gap-5 max-md:gap-1 font-medium cursor-pointer">
             <li className="px-2 py-1 hover:transition-all hover:transition-duration-300 transition hover:text-gold"><Link href={'/'}>Home</Link></li>
             <li className="px-2 py-1 hover:transition-all hover:transition-duration-300 transition hover:text-gold"><Link href={'/about'}>About</Link></li>
-            <li className="px-2 py-1 hover:transition-all hover:transition-duration-300 transition hover:text-gold">Properties</li>
+            <Link href={'/properties'}><li className="px-2 py-1 hover:transition-all hover:transition-duration-300 transition hover:text-gold">Properties</li></Link>
             <li className="px-2 py-1 hover:transition-all hover:transition-duration-300 transition hover:text-gold">Blog</li>
             <li className="px-2 py-1 hover:transition-all hover:transition-duration-300 transition hover:text-gold">Contact</li>
           </ul>
@@ -54,7 +54,7 @@ const Navbar = () => {
               <ul className="text-end flex flex-col gap-4 mt-8">
                 <li><Link href={'/'}>Home</Link></li>
                 <li><Link href={'/about'}>About</Link></li>
-                <li><Link href={'/about'}>Property</Link></li>
+                <li><Link href={'/properties'}>Property</Link></li>
                 <li><Link href={'/about'}>Blog</Link></li>
                 <li><Link href={'/about'}>Contact</Link></li>
               </ul>

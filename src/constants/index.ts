@@ -155,3 +155,61 @@ export const about = {
         }
     ]
 }
+
+export const propertiesPage = {
+    category:['ALL','FLATS','HOUSES','APARTMENTS','LANDS','OFFICES'],
+     property:[
+        {
+            title:'ABAD 3 BHK VILLA',
+            des:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+            area:1450,
+            rooms:3,
+            kitchen:2,
+            bathroom:3,
+            parking:2,
+            img:'/prop1.jpeg'
+        },
+        {
+            title:'4 BHK APARTMENT',
+            des:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+            area:3000,
+            rooms:4,
+            kitchen:1,
+            bathroom:5,
+            parking:2,
+            img:'/prop7.jpeg'
+        },
+        {
+            title:'SKYLINE 3 BHK FLAT',
+            des:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+            area:2580,
+            rooms:2,
+            kitchen:1,
+            bathroom:2,
+            parking:1,
+            img:'/prop8.jpeg'
+        },
+        {
+            title:'4 BHK HOUSE',
+            des:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+            area:3450,
+            rooms:4,
+            kitchen:2,
+            bathroom:5,
+            parking:3,
+            img:'/prop9.jpeg'
+        },
+        {
+            title:'FURNISHED OFFICE',
+            des:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+            area:612,
+            rooms:4,
+            kitchen:0,
+            bathroom:2,
+            parking:10,
+            img:'/prop10.jpeg'
+        },
+        
+        
+     ]
+}
