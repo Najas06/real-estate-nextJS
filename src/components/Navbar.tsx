@@ -52,11 +52,11 @@ const Navbar = () => {
             <div className="flex flex-col items-end">
               <RxCross1 onClick={toggleMenu} />
               <ul className="text-end flex flex-col gap-4 mt-8">
-                <li>Home</li>
-                <li>About</li>
-                <li>Property</li>
-                <li>Blog</li>
-                <li>Contact</li>
+                <li><Link href={'/'}>Home</Link></li>
+                <li><Link href={'/about'}>About</Link></li>
+                <li><Link href={'/about'}>Property</Link></li>
+                <li><Link href={'/about'}>Blog</Link></li>
+                <li><Link href={'/about'}>Contact</Link></li>
               </ul>
             </div>
           </div>

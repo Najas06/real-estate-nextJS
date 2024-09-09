@@ -2,6 +2,7 @@ import React from "react";
 import Bounded from "../Bounded";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroMain = () => {
   return (
@@ -25,7 +26,7 @@ const HeroMain = () => {
                 reiciendis a aliquid deleniti praesentium molestias molestiae,
                 vel aliquam vitae! Veritatis, accusamus officia?
               </p>
-              <Button className=" rounded-none p-6 bg-gold text-white hover:bg-[#9D8A39]">Discover More</Button>
+              <Link href={'/about'}><Button className=" rounded-none p-6 bg-gold text-white hover:bg-[#9D8A39]">Discover More</Button></Link>
             </div>
             <div>
               <Image

@@ -10,15 +10,15 @@ const WhyChooseUs = () => {
       <Bounded>
         <div>
           <div className="h-32 border-l-gold border-l-2 flex justify-start items-end max-md:h-24 max-sm:h-16">
-            <h2 className="text-4xl ml-2 font-medium max-sm:text-xl max-md:text-2xl">
+            <h2 className="text-4xl ml-2 font-medium max-sm:text-xl max-md:text-2xl ">
               Why <span className="text-gold">Choose us ?</span>
             </h2>
           </div>
-          <h2 className="text-center font-semibold text-4xl">
+          <h2 className="text-center font-semibold mt-10 text-4xl max-xl:text-3xl max-sm:text-2xl">
             Reasons To <span className="text-gold">Choose Us</span>
           </h2>
-          <div className="flex py-10">
-            <div className="w-1/2  h-[500px] pr-5 border-r border-gold">
+          <div className="flex py-10 max-md:flex-col max-md:py-0">
+            <div className="w-1/2  h-[500px] pr-5 border-r border-gold max-md:w-full max-md:border-b max-md:border-r-0  ">
               <div className="flex flex-col gap-6 justify-evenly items-start h-full">
                 {help.map((item, i) => (
                   <HelpLabel
@@ -30,17 +30,18 @@ const WhyChooseUs = () => {
                 ))}
               </div>
             </div>
-            <div className="w-1/2 p-5">
-              <p className="text-xl ">
+            <div className="w-1/2 p-5 max-md:w-full">
+              <p className="text-xl max-md:my-3">
                 Our <span className="text-gold">Office</span>
               </p>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.6345482542633!2d76.33262487474559!3d10.046984972225028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d6f3a60778b%3A0x810be95c9816e984!2sTinkerSpace!5e0!3m2!1sen!2sin!4v1725798615683!5m2!1sen!2sin"
-                width="600"
+                width="100%"
                 height="450"
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
+                className="w-full "
               ></iframe>
             </div>
           </div>

@@ -1,3 +1,4 @@
+import AboutTestimonial from "@/components/about/AboutTestimonial"
 import Hero from "@/components/about/Hero"
 import WhyChooseUs from "@/components/about/WhyChooseUs"
 
@@ -9,7 +10,7 @@ const page = () => {
       <SubHeadline page="About US"/>
       <Hero/>
       <WhyChooseUs/>
-      
+      <AboutTestimonial/>
     </div>
   )
 }
