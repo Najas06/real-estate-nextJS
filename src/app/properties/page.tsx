@@ -5,7 +5,7 @@ import SubHeadline from "@/components/SubHeadline"
 const page = () => {
   return (
     <div>
-        <SubHeadline page="Properties"/>
+        <SubHeadline page="Properties" subTitle="Properties for sale"/>
         <PropHero/>
     </div>
   )

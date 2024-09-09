@@ -21,7 +21,7 @@ const PropHero = () => {
               {category.map((item, i) => (
                 <li
                   key={i}
-                  className={`px-6 py-0.5 border border-gold font-semibold text-gold text-xl max-sm:text-sm ${
+                  className={`px-6 py-0.5 border border-gold font-semibold text-gold text-xl max-sm:text-sm cursor-pointer hover:bg-black transition-all duration-150 ${
                     i === 0 && "bg-black"
                   }`}
                 >
@@ -37,7 +37,7 @@ const PropHero = () => {
                 placeholder="Search by Caterories or Locations"
                 className="outline-none border-gold h-[50px] max-sm:h-[40px] rounded-none   "
               />
-              <Button className="py-5 rounded-none bg-gold text-white font-light h-[50px] max-sm:h-[30px]">
+              <Button className="py-5 rounded-none bg-gold text-white font-light h-[50px] max-sm:h-[30px] hover:bg-[#9D8A39] duration-150 transition-all">
                 Search
               </Button>
             </div>
@@ -116,7 +116,7 @@ const PropHero = () => {
               </p>
               <select
                 id="SORT"
-                className="p-3  outline-none border border-gold bg-white text-black"
+                className="px-3 py-1  outline-none border border-gold bg-white text-black"
               >
                 <option selected disabled defaultValue={""}>
                   SORT
@@ -244,7 +244,7 @@ function PropertyCard({
                 <p className="font-semibold text-xl">{parking}</p>
               </li>
             </ul>
-            <Button className="bg-black rounded-none h-[30px] py-7 border border-gold text-white text-2xl font-normal">View More Details</Button>
+            <Button className="bg-black rounded-none h-[30px] py-7 border border-gold text-white text-2xl font-normal transition-all duration-150 hover:bg-[#9D8A39]">View More Details</Button>
           </div>
         </div>
         <div className="w-2/3 h-[450px] max-md:w-full max-sm:h-[300px]">

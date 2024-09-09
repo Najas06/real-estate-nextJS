@@ -31,7 +31,7 @@ const AboutTestimonial = () => {
           </div>
           <div className="py-5">
             <Carousel
-              className="max-w-[800px]  mx-auto border h-[500px] overflow-hidden"
+              className="max-w-[800px]  mx-auto  h-[500px] overflow-hidden"
               orientation="horizontal"
               opts={{
                 align: "start",
@@ -49,8 +49,8 @@ const AboutTestimonial = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="absolute top-1/2 left-5 -translate-y-1/2 bg-transparent" />
-              <CarouselNext className="absolute top-1/2 right-5 -translate-y-1/2 bg-transparent" />
+              <CarouselPrevious className="absolute top-1/2 left-5 -translate-y-1/2 bg-transparent border-gold" />
+              <CarouselNext className="absolute top-1/2 right-5 -translate-y-1/2 bg-transparent border-gold" />
             </Carousel>
           </div>
           <div className="py-10"></div>

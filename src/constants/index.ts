@@ -209,7 +209,57 @@ export const propertiesPage = {
             parking:10,
             img:'/prop10.jpeg'
         },
-        
-        
      ]
+}
+
+export const blog = {
+    posts:[
+        {
+            title:'43 LACKS CAN BUILD YOUR DREAM HOUSE WITH 4 BHK',
+            des:'Kochi Builders provide a beatiful plan with minimal cost of lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+            img:'/blog1.jpeg'
+        },
+        {
+            title:'ABAD STARTING THERE 150TH PROJECT IN ALAPPUZHA',
+            des:'ABAD Constructor is a professional builder of 150th project in Alappuzha. We are an experienced builder with 15 years of experience. We provide quality services to our clients.',
+            img:'/blog2.jpeg'
+        },
+        {
+            title:'SPACE EXPANDING THERE CURRENTLY CO-WORKING',
+            des:'Near Info-Park Spacezone expanding there space for Profits. We are expanding there space for Profits. We are expanding there space for Profits. We are expanding there space for Profits.',
+            img:"/prop10.jpeg"
+        },
+        {
+            title:"CHERAI RESORTS START MRP 999RS AC ROOMS",
+            des:'The New idea to impress visitors Beach to Budget Friendly. The New idea to impress visitors Beach to Budget Friendly. The New idea to impress visitors Beach to Budget Friendly. The New idea to impress visitors Beach to Budget Friendly.',
+            img:'/blog3.jpeg'
+        },
+        {
+            title:"EVERY WOMEN HAS DREAM KITCHEN TO DO DISHES",
+            des:'Every women has dream kitchen to do dishes. Every women has dream kitchen to do dishes. Every women has dream kitchen to do dishes. Every women has dream kitchen to do dishes.',
+            img:'/blog4.jpeg'
+        }
+    ],
+    categoryLabel:[
+        {
+            name:'News',
+            count:7,
+            img:'/blogCategory/Newspaper.svg'
+        },
+        {
+            name:'Apartments',
+            count:10,
+            img:'/blogCategory/Apartment.svg'
+        },
+        {
+            name:'New Projects',
+            count:12,
+            img:'/blogCategory/Crane.svg'
+        },
+        {
+            name:'Houses',
+            count:30,
+            img:'/blogCategory/Home.svg'
+        }
+    ]
 }
