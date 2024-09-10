@@ -6,6 +6,7 @@ import { SiMinutemailer } from "react-icons/si";
 import { FaBuilding, FaFacebookSquare, FaInstagram, FaPhone, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -53,13 +54,12 @@ const Footer = () => {
             </div>
             <div>
               <h2 className="text-3xl font-normal">Quick Links</h2>
-              <ul className="flex flex-col gap-4 mt-8">
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Properties</li>
-                <li>Blog</li>
-                <li>Contact</li>
+              <ul className="flex flex-col gap-4 mt-8 cursor-pointer">
+                <Link href={'/'}><li>Home</li></Link>
+                <Link href={'/about'}><li>About</li></Link>
+                <Link href={'/properties'}><li>Properties</li></Link>
+                <Link href={'/blog'}><li>Blog</li></Link>
+                <Link href={'/contact'}><li>Contact</li></Link>
               </ul>
             </div>
             <div>

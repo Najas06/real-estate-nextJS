@@ -48,7 +48,7 @@ const Hero = () => {
                 <p className="text-xl max-xl:text-lg max-lg:text-base max-md:text-center max-sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repudiandae, minima iste atque earum quaerat sed error. Ipsam, animi officia! Modi corporis odio debitis aut soluta vitae a praesentium. Beatae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur fugit, repudiandae omnis doloremque quis nisi, natus animi libero porro itaque maiores quo sapiente ducimus dolorem exercitationem atque ipsam ratione ex.</p>
                 <div className="flex justify-between items-center w-full max-md:justify-evenly">
                   <h2 className="text-4xl font-semibold max-xl:text-3xl"><span className="text-gold">4.9</span>/5 <span className="text-2xl max-xl:text-xl">Rating</span></h2>
-                  <Image src={'/reviews.svg'} alt="reviews img" width={1920} height={1080} className="w-[18%]"/>
+                  <Image src={'/reviews.svg'} alt="reviews img" width={720} height={480} className="w-[18%]"/>
                 </div>
               </div>
             </div>

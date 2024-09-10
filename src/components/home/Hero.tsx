@@ -8,6 +8,7 @@ import {
 } from "../ui/carousel";
 import { Button } from "../ui/button";
 import { carousel } from "@/constants";
+import Link from "next/link";
 
 const Hero = () => {
   const { data } = carousel;
@@ -37,12 +38,16 @@ const Hero = () => {
                         </h2>
                       </div>
                       <div className="flex justify-evenly gap-3 my-5 max-lg:my-3 max-md:my-2">
-                        <Button className="w-full p-8  text-3xl font-normal rounded-none bg-gold text-white hover:bg-[#9D8A39]  max-xl:text-xl max-lg:text-[16px] max-lg:p-4 max-md:text-[8px] max-md:p-2  max-sm:p-2 ">
-                          Connect Now
-                        </Button>
-                        <Button className="w-full p-8  text-3xl font-normal rounded-none bg-black text-white outline hover:bg-white hover:text-black max-xl:text-xl max-lg:text-[16px] max-lg:p-4 max-md:text-[8px] max-md:p-2  max-sm:p-2 max-sm:outline-none">
-                          Discover More
-                        </Button>
+                        <Link href={"/contact"}>
+                          <Button  className="w-full p-8  text-3xl font-normal rounded-none bg-gold text-white hover:bg-[#9D8A39]  max-xl:text-xl max-lg:text-[16px] max-lg:p-4 max-md:text-[8px] max-md:p-2  max-sm:p-2 ">
+                            Connect Now
+                          </Button>
+                        </Link >
+                        <Link href={'/properties'} >
+                          <Button className="w-full p-8  text-3xl font-normal rounded-none bg-black text-white outline hover:bg-white hover:text-black max-xl:text-xl max-lg:text-[16px] max-lg:p-4 max-md:text-[8px] max-md:p-2  max-sm:p-2 max-sm:outline-none">
+                            Discover More
+                          </Button>
+                        </Link>
                       </div>
                     </div>
                   </div>
