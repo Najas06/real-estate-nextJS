@@ -1,8 +1,9 @@
 import React from "react";
 import Bounded from "../Bounded";
 import GridCard from "../elements/GridCard";
-import { Button } from "../ui/button";
+import { Button, buttonVariants } from "../ui/button";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 const PropertySection = () => {
   return (
@@ -20,7 +21,7 @@ const PropertySection = () => {
         </div>
         <GridCard />
         <div className="flex justify-center pb-10">
-          <Link href={'/properties'}><Button className="bg-gold rounded-none p-6 text-xl text-white font-light hover:bg-[#9D8A39]">Discover More</Button></Link>
+          <Link href={'/properties'} className={cn(buttonVariants({variant:"gold",size:"lg", className: "rounded-none"}))}>Discover More</Link>
         </div>
       </Bounded>
     </section>

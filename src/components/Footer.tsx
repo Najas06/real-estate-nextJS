@@ -41,7 +41,8 @@ const Footer = () => {
               <h2 className="text-3xl font-normal">Our Newsletter</h2>
               <div className="flex ">
                 <Input type="email" className=" rounded-none h-full p-5" placeholder="Your Email Address" />
-                <Button className="w-[20%] h-full font-normal rounded-none bg-gold text-white hover:bg-[#9D8A39]  max-xl:text-xl max-lg:text-[16px] max-md:text-[8px] max-md:p-2  max-sm:p-2 ">
+                <Button variant={'gold'} className="w-[20%] h-full font-normal rounded-none bg-gold text-white">
+                {/* <Button className="w-[20%] h-full font-normal rounded-none bg-gold text-white hover:bg-[#9D8A39]  max-xl:text-xl max-lg:text-[16px] max-md:text-[8px] max-md:p-2  max-sm:p-2 "> */}
                   <SiMinutemailer className="text-xl" />
                 </Button>
               </div>
@@ -85,7 +86,8 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center gap-3 overflow-x-auto">
                   <MdEmail className="text-gold"/>
-                  <p className="">realestatesupport@gmail.com</p>
+                  <p className="">realestatesupport@gmail.com</p> 
+                  {/* mail tag */}
                 </div>
               </div>
             </div>

@@ -2,7 +2,8 @@ import React from "react";
 import Bounded from "../Bounded";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
-import { Button } from "../ui/button";
+import { Button, buttonVariants } from "../ui/button";
+import { cn } from "@/lib/utils";
 
 const HomeConnect = () => {
   return (
@@ -41,7 +42,7 @@ const HomeConnect = () => {
               />
               <Textarea className="border border-gold p-6 rounded-none bg-[#F6F6F6] col-span-2" placeholder="Message"></Textarea>
               <div className="flex justify-center col-span-2">
-                <Button className="bg-gold p-6 rounded-none text-white hover:bg-[#9D8A39]">Submit</Button>
+                <Button className={cn(buttonVariants({variant:'gold',className:"rounded-none py-6"}))}>Send us a email!</Button>
               </div>
             </div>
           </form>

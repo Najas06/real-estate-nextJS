@@ -1,9 +1,10 @@
 import { propertiesPage } from "@/constants";
 import Bounded from "../Bounded";
 import { Input } from "../ui/input";
-import { Button } from "../ui/button";
+import { Button, buttonVariants } from "../ui/button";
 import Image from "next/image";
 import { FaAngleDoubleUp } from "react-icons/fa";
+import { cn } from "@/lib/utils";
 
 const PropHero = () => {
   const { category, property } = propertiesPage;
@@ -21,12 +22,26 @@ const PropHero = () => {
               {category.map((item, i) => (
                 <li
                   key={i}
-                  className={`px-6 py-0.5 border border-gold font-semibold text-gold text-xl max-sm:text-sm cursor-pointer hover:bg-black transition-all duration-150 ${
-                    i === 0 && "bg-black"
-                  }`}
+                  className={cn(
+                    buttonVariants({
+                      variant: "black3",
+                      size: "lg",
+                    }),
+                    {
+                      "bg-black": i === 0,
+                    }
+                  )}
                 >
                   {item}
                 </li>
+                // <li
+                //   key={i}
+                //   className={` text-xl max-sm:text-sm  ${
+                //     i === 0 && "bg-black"
+                //   }`}
+                // >
+                //   {item}
+                // </li>
               ))}
             </ul>
           </div>
@@ -37,9 +52,12 @@ const PropHero = () => {
                 placeholder="Search by Caterories or Locations"
                 className="outline-none border-gold h-[50px] max-sm:h-[40px] rounded-none   "
               />
-              <Button className="py-5 rounded-none bg-gold text-white font-light h-[50px] max-sm:h-[30px] hover:bg-[#9D8A39] duration-150 transition-all">
+              <Button className={cn(buttonVariants({ variant: "gold" , className:'py-5 font-light h-[50px] max-sm:h-[30px] duration-150 transition-all rounded-none'}))}>
                 Search
               </Button>
+              {/* <Button className="py-5 rounded-none bg-gold text-white font-light h-[50px] max-sm:h-[30px] hover:bg-[#9D8A39] duration-150 transition-all">
+                Search
+              </Button> */}
             </div>
           </div>
           <div className="max-sm:my-5 my-10">
@@ -244,7 +262,12 @@ function PropertyCard({
                 <p className="font-semibold text-xl">{parking}</p>
               </li>
             </ul>
-            <Button className="bg-black rounded-none h-[30px] py-7 border border-gold text-white text-2xl font-normal transition-all duration-150 hover:bg-[#9D8A39]">View More Details</Button>
+            <Button className={cn(buttonVariants({variant:'black2', className:'h-[30px] py-7 text-2xl font-normal transition-all duration-150'}))}>
+              View More Details
+            </Button>
+            {/* <Button className="bg-black rounded-none h-[30px] py-7 border border-gold text-white text-2xl font-normal transition-all duration-150 hover:bg-[#9D8A39]">
+              View More Details
+            </Button> */}
           </div>
         </div>
         <div className="w-2/3 h-[450px] max-md:w-full max-sm:h-[300px]">

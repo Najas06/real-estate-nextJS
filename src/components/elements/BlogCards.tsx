@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { Button } from "../ui/button";
+import { Button, buttonVariants } from "../ui/button";
+import { cn } from "@/lib/utils";
 
 const BlogCards = ({
   title,
@@ -30,9 +31,12 @@ const BlogCards = ({
             </p>
           </div>
           <div className="w-1/3 flex justify-center max-md:justify-start">
-            <Button className="rounded-none text-xl px-6 py-5 bg-black text-white border border-gold hover:bg-gold">
+            <Button className={cn(buttonVariants({variant:'black2',className:'text-xl px-6 h-full'}))}>
               Visit More
             </Button>
+            {/* <Button className="rounded-none text-xl px-6 py-5 bg-black text-white border border-gold hover:bg-gold">
+              Visit More
+            </Button> */}
           </div>
         </div>
       </div>

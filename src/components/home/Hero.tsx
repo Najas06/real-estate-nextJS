@@ -6,9 +6,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../ui/carousel";
-import { Button } from "../ui/button";
+import { Button, buttonVariants } from "../ui/button";
 import { carousel } from "@/constants";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 const Hero = () => {
   const { data } = carousel;
@@ -38,15 +39,29 @@ const Hero = () => {
                         </h2>
                       </div>
                       <div className="flex justify-evenly gap-3 my-5 max-lg:my-3 max-md:my-2">
-                        <Link href={"/contact"}>
-                          <Button  className="w-full p-8  text-3xl font-normal rounded-none bg-gold text-white hover:bg-[#9D8A39]  max-xl:text-xl max-lg:text-[16px] max-lg:p-4 max-md:text-[8px] max-md:p-2  max-sm:p-2 ">
-                            Connect Now
-                          </Button>
-                        </Link >
-                        <Link href={'/properties'} >
-                          <Button className="w-full p-8  text-3xl font-normal rounded-none bg-black text-white outline hover:bg-white hover:text-black max-xl:text-xl max-lg:text-[16px] max-lg:p-4 max-md:text-[8px] max-md:p-2  max-sm:p-2 max-sm:outline-none">
-                            Discover More
-                          </Button>
+                        <Link
+                          href={"/contact"}
+                          className={cn(
+                            buttonVariants({
+                              variant: "gold",
+                              className:
+                                "w-full p-8  text-3xl font-normal rounded-none max-xl:text-xl max-lg:text-[16px] max-lg:p-4 max-md:text-[8px] max-md:p-2  max-sm:p-2",
+                            })
+                          )}
+                        >
+                          Connect Now
+                        </Link>
+                        <Link
+                          href={"/properties"}
+                          className={cn(
+                            buttonVariants({
+                              variant: "black",
+                              className:
+                                " p-8  text-3xl  max-xl:text-xl max-lg:text-[16px]  max-md:text-[8px]",
+                            })
+                          )}
+                        >
+                          Discover More
                         </Link>
                       </div>
                     </div>
@@ -57,33 +72,45 @@ const Hero = () => {
           <CarouselPrevious className="absolute left-5  max-sm:hidden mt-10 " />
           <CarouselNext className="absolute right-5 max-sm:hidden mt-10" />
         </Carousel>
-
-        {/* <div className="p-5 flex items-center justify-between absolute w-full bg-black bg-opacity-90 max-sm:px-5 max-sm:py-2">
-          <Image
-            src={"/relogo.svg"}
-            alt="logo"
-            width={200}
-            height={200}
-            className="w-[5%] cursor-pointer max-sm:w-[10%]"
-          />
-          <div>
-            <p className="flex items-center gap-1 cursor-pointer   max-sm:text-[12px]">
-              <span className="font-bold text-gold">EN </span>/{" "}
-              <span>
-                <Image
-                  alt="flag"
-                  src={"/Flags.svg"}
-                  width={22}
-                  height={16}
-                  className="w-[100%]"
-                />
-              </span>
-            </p>
-          </div>
-        </div> */}
       </div>
     </section>
   );
 };
 
 export default Hero;
+
+{
+  /* <div className="p-5 flex items-center justify-between absolute w-full bg-black bg-opacity-90 max-sm:px-5 max-sm:py-2">
+  <Image
+  src={"/relogo.svg"}
+    alt="logo"
+    width={200}
+    height={200}
+    className="w-[5%] cursor-pointer max-sm:w-[10%]"
+  />
+  <div>
+  <p className="flex items-center gap-1 cursor-pointer   max-sm:text-[12px]">
+  <span className="font-bold text-gold">EN </span>/{" "}
+  <span>
+  <Image
+  alt="flag"
+  src={"/Flags.svg"}
+  width={22}
+  height={16}
+  className="w-[100%]"
+  />
+  </span>
+  </p>
+  </div>
+  </div> */
+}
+{
+  /* <Button className="w-full p-8  text-3xl font-normal rounded-none bg-black text-white outline-1 outline hover:bg-white hover:text-black max-xl:text-xl max-lg:text-[16px] max-lg:p-4 max-md:text-[8px] max-md:p-2  max-sm:p-2 max-sm:outline-none">
+    Discover More
+    </Button> */
+}
+{
+  /* <Button  className="w-full p-8  text-3xl font-normal rounded-none bg-gold text-white hover:bg-[#9D8A39]  max-xl:text-xl max-lg:text-[16px] max-lg:p-4 max-md:text-[8px] max-md:p-2  max-sm:p-2 ">
+      Connect Now
+    </Button> */
+}

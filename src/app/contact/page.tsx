@@ -1,8 +1,9 @@
 import Bounded from "@/components/Bounded";
 import SubHeadline from "@/components/SubHeadline";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { cn } from "@/lib/utils";
 import { FaFacebookSquare, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -75,9 +76,12 @@ const page = () => {
                     </p>
                     <Textarea className="rounded-none border border-gold w-full h-[100px]  bg-[#F6F6F6]" />
                   </div>
-                  <Button className="bg-gold rounded-none p-6 text-xl text-white font-light hover:bg-[#9D8A39] w-full max-md:mt-5">
+                  <Button className={cn(buttonVariants({variant:'gold',className:'w-full max-md:mt-5 rounded-none py-6'}))}>
                     Submit
                   </Button>
+                  {/* <Button className="bg-gold rounded-none p-6 text-xl text-white font-light hover:bg-[#9D8A39] w-full max-md:mt-5">
+                    Submit
+                  </Button> */}
                 </div>
               </div>
             </div>

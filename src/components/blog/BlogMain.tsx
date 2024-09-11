@@ -100,7 +100,7 @@ function NewsCard({ title, img }: { title: string; img: string }) {
           <p className="text-xs max-lg:text-2xl font-medium max-md:text-xl max-sm:text-lg">{title}</p>
         </div>
       </div>
-      <div className="border-b border-gold w-5/6 mx-auto max-lg:my-5"></div>
+      <div className="border-b border-gold w-5/6 mx-auto lg:mt-3  max-lg:my-5"></div>
     </div>
   );
 }

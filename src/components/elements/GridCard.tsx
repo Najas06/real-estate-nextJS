@@ -51,7 +51,7 @@ const GridCard = () => {
             <p className="font-semibold ml-2 -mb-1">{prop.balcony} BAL</p>
           </div>
         </div>
-          <Button className="bg-black rounded-none border-gold border text-white p-5 hover:bg-gold">View Details</Button>
+          <Button variant={'black2'}>View Details</Button>
       </div>
       ))
     }
