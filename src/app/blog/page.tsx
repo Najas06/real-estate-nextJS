@@ -3,10 +3,10 @@ import SubHeadline from "@/components/SubHeadline"
 
 const page = () => {
   return (
-    <div>
+    <main className="max-w-[1920px] mx-auto">
         <SubHeadline page="Blog" subTitle="Top Articles on Real Estate"/>
         <BlogMain/>
-    </div>
+    </main>
   )
 }
 

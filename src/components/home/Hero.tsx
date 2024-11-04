@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 const Hero = () => {
   const { data } = carousel;
   return (
-    <section>
+    <section className="max-w-[1920px] mx-auto">
       <div className="max-sm:flex max-sm:flex-col">
         <Carousel className=" relative top-0 max-sm:top-[16%]  max-sm:relative ">
           <CarouselContent>

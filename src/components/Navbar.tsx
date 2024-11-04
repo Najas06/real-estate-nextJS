@@ -13,7 +13,8 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="p-5 flex items-center justify-between fixed w-full bg-black bg-opacity-90 max-sm:px-5 max-sm:py-2 z-[1000] h-[100px] max-xl:h-[80px] max-sm:h-[60px]">
+      <nav className="max-w-[1920px] mx-auto">
+      <div className="p-5 flex items-center justify-between fixed top-0 w-full bg-black bg-opacity-90 max-sm:px-5 max-sm:py-2 z-[1000] h-[100px] max-xl:h-[80px] max-sm:h-[60px] max-w-[1920px] mx-auto">
         <Image
           src={"/relogo.svg"}
           alt="logo"
@@ -46,6 +47,7 @@ const Navbar = () => {
           <RiMenu3Line onClick={toggleMenu} />
         </div>
       </div>
+      </nav>
       {toggle && (
         <div className="max-sm:block md:hidden fixed top-0 right-0 w-2/5 bg-black z-[1000] h-full">
           <div className="relative top-[3%] right-5">

@@ -11,7 +11,7 @@ const page = () => {
   return (
     <>
       <SubHeadline page="Contact" subTitle="Contact Us" />
-      <section className="bg-white text-black">
+      <section className="bg-white text-black max-w-[1920px] mx-auto">
         <Bounded>
           <div className="h-full">
             <div className="h-32 border-l-gold border-l-2 flex justify-start items-end max-md:h-24 max-sm:h-16">
